@@ -1,0 +1,64 @@
+#slider {
+  height: 100vh;
+  position: relative;
+}
+
+#slider #btnLeft, #slider #btnRight {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+}
+
+#slider #btnLeft {
+  left: 25px;
+}
+
+#slider #btnRight {
+  right: 25px;
+}
+
+#slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+#slider .slide.active {
+  opacity: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
+  visibility: visible;
+}
+
+#slider .slide:nth-child(1) {
+  background: url(../photo/imase.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#slider .slide:nth-child(2) {
+  background: url(../photo/26-26.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#slider .slide:nth-child(3) {
+  background: url(../photo/329-32t.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#slider .slide:nth-child(4) {
+  background: url(../photo/travel-background-png-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/*# sourceMappingURL=style.css.map */
